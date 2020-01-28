@@ -40,3 +40,16 @@ Ejemplo de uso:
 Si no hubiera coincidencias regresaría:
 ./application fuzzy-search {“search”: “Alver”}
 Sin coincidencias
+
+
+algoritmo de búsqueda de aproximación
+
+Para realizar esta busqueda, ya se tiene varios algoritmos implementados en java Commons
+por lo cual de realizo una pequeño algoritmo (funcion) la cual trata de:
+
+1.- Tomar la cadena a buscar
+2.- Tratar el valor  a buscar (eliminar caracteres espciales, pasar a minusculas)
+3.- Generar n nunmero de substring de longitud 3, las cuales seran las cadenas que se buscaran dentro del texto a analizar
+4.- Si el texto base contiene alguyna de los substrings, se da por valida esa linea
+5.- Se genera la salida deseada.
+
